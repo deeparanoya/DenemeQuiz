@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/colorBarYesil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:text="Soru : 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSoruSayisi"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:src="@drawable/ustbarlogo"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:text="Zaman : 00 : 00 : 25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewZaman"
+            android:layout_weight="1"
+
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/load"
+
+        android:id="@+id/imageViewDenemeSinaviSoru"
+        android:layout_gravity="top"
+        android:layout_height="400dp"
+        android:foregroundGravity="top" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/RadiGroupCevap"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_gravity="center_vertical|center_horizontal|center">
+        <RadioButton
+            android:text="A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonA"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textAlignment="textStart"
+            android:textStyle="normal|bold"/>
+
+        <RadioButton
+            android:text="B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonB"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"/>
+
+        <RadioButton
+            android:text="C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonC"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"/>
+
+        <RadioButton
+            android:text="D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonD"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"/>
+
+        <RadioButton
+            android:text="E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonE"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:gravity="center_vertical|center_horizontal|start"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:gravity="bottom">
+
+        <Button
+            android:text="Sınavı Bitir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ButtonSinavBitir"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:textColor="@color/colorBarYesil"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

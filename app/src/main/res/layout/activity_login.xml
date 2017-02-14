@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.kpss.denemequiz.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LogoLayout"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:paddingTop="80dp">
+
+        <ImageView
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:src="@drawable/logo"
+
+            android:id="@+id/imageViewLogo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/LogoLayout"
+        android:id="@+id/LoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:src="@drawable/facebooklogo"
+            android:id="@+id/imageViewFacebookLogo"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_width="70dp"
+            android:layout_marginRight="-30dp"/>
+
+        <Button
+            android:text="FACEBOOK İLE GİRİŞ YAP"
+            android:layout_height="50dp"
+            android:id="@+id/buttonFacebookLogin"
+            android:layout_weight="3"
+            android:layout_width="150dp"
+            android:background="#3B5998"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:textStyle="normal|bold"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PearlKpss</string>
+    <string name="facebook_app_id">1844326642449490</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="bannerAd">ca-app-pub-0947510276857574/7832581594</string>
+    <string name="GecisAd">ca-app-pub-0947510276857574/9309314790</string>
+</resources>
