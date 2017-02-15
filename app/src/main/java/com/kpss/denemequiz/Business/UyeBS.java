@@ -57,22 +57,18 @@ public class UyeBS {
         parameters.put("KullaniciAdi", KullaniciAdi);
         parameters.put("UyeID", UyeID);
         parameters.put("Key", Ayarlar.Key);
-
-
         JSONObject contacts = null;
         donenDegerLoginKontrol = new Uye();
 
         try {
+
             contacts = new JSONObject(new AsyncWebService("LoginKontrol", parameters).execute().get());
-
-
             String id = contacts.getString("id");
             String _KullaniciAdi = contacts.getString("KullaniciAdi");
             String _Password = contacts.getString("Password");
             donenDegerLoginKontrol.id = id;
             donenDegerLoginKontrol.KullaniciAdi = _KullaniciAdi;
             donenDegerLoginKontrol.Password = _Password;
-
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -96,8 +92,6 @@ public class UyeBS {
 
         try {
             contacts = new JSONArray(new AsyncWebService("UyeGetirDenemeSinavlari", parameters).execute().get());
-
-
             // looping through All Contacts
             for (int i = 0; i < contacts.length(); i++) {
                 JSONObject c = contacts.getJSONObject(i);
@@ -168,7 +162,6 @@ public class UyeBS {
                 String Zaman = c.getString("Zaman").equalsIgnoreCase("null") ? "0" : c.getString("Zaman");
                 String Bos = c.getString("Bos").equalsIgnoreCase("null") ? "0" : c.getString("Bos");
 
-
                 donenDegerUyeGetirDenemeSinavlariSingle.id = id;
                 donenDegerUyeGetirDenemeSinavlariSingle.DenemeSinaviAdi = DenemeSinaviAdi;
                 donenDegerUyeGetirDenemeSinavlariSingle.Konu = Konu;
@@ -179,7 +172,6 @@ public class UyeBS {
                 donenDegerUyeGetirDenemeSinavlariSingle.ToplamGiren = ToplamGiren;
                 donenDegerUyeGetirDenemeSinavlariSingle.Zaman = Zaman;
                 donenDegerUyeGetirDenemeSinavlariSingle.Bos = Bos;
-
 
             }
 
