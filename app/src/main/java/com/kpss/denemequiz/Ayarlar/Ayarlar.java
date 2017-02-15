@@ -21,14 +21,6 @@ public class Ayarlar  {
     public static Long SinavBaslangic = null;
     public static String GecisReklam="ca-app-pub-0947510276857574/9309314790";
 
-
-
-
-
-
-
-
-
     public static String getDurationString(int seconds) {
 
         int hours = seconds / 3600;
