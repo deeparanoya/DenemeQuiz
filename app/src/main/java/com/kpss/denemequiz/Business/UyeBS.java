@@ -26,7 +26,6 @@ import java.util.concurrent.ExecutionException;
 public class UyeBS {
 
     private Boolean donenDegerUyeEkle;
-
     private Uye donenDegerLoginKontrol;
     private List<UyeGetirDenemeSinaviIDSorulari> donenDegerUyeGetirDenemeSinaviIDSorulari;
     private List<UyeGetirDenemeSinavlari> donenDegerUyeGetirDenemeSinavlari;
@@ -35,10 +34,7 @@ public class UyeBS {
     private List<UyeleriGetirDenemeSinavID> donenDegerUyeleriGetirDenemeSinavID;
     private List<UyeSinavCevapGetir> donenDegerUyeSinavCevapGetir;
 
-
     public Boolean UyeEkle(String KullaniciAdi, String UyeID) {
-
-
         HashMap<String, String> parameters = new HashMap<String, String>();
         parameters.put("KullaniciAdi", KullaniciAdi);
         parameters.put("UyeID", UyeID);
