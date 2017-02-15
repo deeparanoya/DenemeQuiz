@@ -20,7 +20,7 @@ public class Ayarlar  {
     public static final String SoapAction = "http://tempuri.org/";
     public static final String Key = "100"; //Webserviste method kullanma şifresi.
     public static Long SinavBaslangic = null; //Kullanıcı bir deneme sınavına başladığında başlangıç zamanını atar
-    public static String GecisReklam="ca-app-pub-0947510276857574/9309314790"; //Admob Inıtal Reklam ids
+    public static String GecisReklam="ca-app-pub-0947510276857574/9309314790"; //Admob Inıtal Reklam idsi
 
     //Saniyeyi zamana çevirir. Örn: 00:06:48
     public static String getDurationString(int seconds) {
