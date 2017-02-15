@@ -92,7 +92,7 @@ public class UyeBS {
 
         try {
             contacts = new JSONArray(new AsyncWebService("UyeGetirDenemeSinavlari", parameters).execute().get());
-            // looping through All Contacts
+
             for (int i = 0; i < contacts.length(); i++) {
                 JSONObject c = contacts.getJSONObject(i);
 
@@ -119,7 +119,7 @@ public class UyeBS {
                 _UyeGetirDenemeSinavi.Zaman = Zaman;
                 _UyeGetirDenemeSinavi.Bos = Bos;
 
-                // adding contact to contact list
+
                 donenDegerUyeGetirDenemeSinavlari.add(_UyeGetirDenemeSinavi);
             }
 

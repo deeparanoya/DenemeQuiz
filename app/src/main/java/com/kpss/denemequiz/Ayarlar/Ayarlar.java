@@ -15,7 +15,6 @@ import java.util.Date;
 
 public class Ayarlar  {
 
-
     public static final String Domain = "http://kpssdenemesinavi.somee.com/"; //Web Service kurulumunu yaptığınız site adresi
     public static final String WebServiceDomain = "http://kpssdenemesinavi.somee.com/AndroidService/WebService.asmx"; //Web servis yolu
     public static final String SoapAction = "http://tempuri.org/";
